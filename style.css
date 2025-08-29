@@ -4,10 +4,6 @@
     height: 100%;
 }
 
-
-
-
-
 .left{
     width: 40%;
     height: 100%;
@@ -35,15 +31,6 @@
     text-align: center;
     width: 475px;
 }
-
-
-
-
-
-
-
-
-
 
 .right{
     display: flex;
@@ -99,9 +86,6 @@
 .wa img{
     height: 100%;
 }
-
-
-
 .client{
     height: 50%;
     background-color: rgb(204, 204, 204);
@@ -139,8 +123,6 @@
 .horizontal-scrol::-webkit-scrollbar {
     display: none;
 }
-
-
 
 @media (max-width:1080px) {
     .header img{
@@ -194,7 +176,6 @@
     }
 }
 
-
 @media (max-width:920px){
     .container{
     display: flex;
@@ -203,8 +184,6 @@
     flex-direction: column;
     width: 100%;
     }
-
-
 
     .left{
         display: flex;
@@ -225,8 +204,6 @@
     .header p{
         font-size: 15px;
     }
-
-
 
     .right{
         display: flex;
@@ -307,4 +284,81 @@
     .horizontal-scrol::-webkit-scrollbar {
         display: none;
     }
+}
+
+
+.order-page{
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    margin: 5px;
+    height: 97.5vh;
+}
+.box{
+    background-color: #616161;
+    border-radius: 20px;
+    color: #ffffff;
+    border: 2px solid #000000;
+}
+input[type="text"],
+input[type="tel"],
+input[type="file"]{
+    width: 95%;
+    padding: 10px;
+    margin: 8px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.personal{
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.shoes{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.invoice{
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.preview{
+    margin-top: 10px;
+    width: 70%;
+    height: 45%;
+    border: 2px dashed #000000;
+    border-radius: 10px;
+    display: grid;
+}
+.preview img{
+    margin-top: 10px;
+    max-width: 95%;
+    max-height: 95%;
+    border-radius: 10px;
+    object-fit: cover;
+    display: none;
+}
+.detail{
+    margin-top: 10px;
+    width: 70%;
+    height: 40%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+.service{
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+.detail input{
+    grid-column: 1 / span 2;
 }
