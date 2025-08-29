@@ -362,3 +362,24 @@ input[type="file"]{
 .detail input{
     grid-column: 1 / span 2;
 }
+
+@media (max-width:1000px){
+    .order-page{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 5px;
+    }
+    .personal{
+        height: 350px;
+    }
+    .shoes{
+        height: 500px;
+    }
+    .service{
+        height: 600px;
+    }
+    .detail{
+        height: 600px;
+    }
+}
