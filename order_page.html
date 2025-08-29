@@ -3,9 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ORDER PAGE</title>
+    <title>Order</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome</h1>
+    <div class="order-page">
+        <div class="box personal">
+                <h3>Information about your self</h3>
+                <form action="" >
+                    Nama <input type="text" required aria-required="true"> <br>
+                    Alamat <input type="text" required aria-required="true"><br>
+                    WhatsApp <input type="tel" required aria-required="true">
+                </form>
+        </div>
+        <div class="box shoes">
+            <h3>Information about your shoes</h3>
+            <form action="">
+                <p>Jenis Sepatu</p>
+                <div class="jenis">
+                <input type="radio" name="Jenis Sepatu" value="Kanvas/Kain" required aria-required="true"> <label for="Jenis Sepatu">Kanvas/Kain</label>
+
+                    <input type="radio" name="Jenis Sepatu" value="Leather/ Kulit Asli" required aria-required="true"> <label for="Jenis Sepatu">Leather/ Kulit Asli</label>
+                    
+                    <input type="radio" name="Jenis Sepatu" value="Leather Sintetis" required aria-required="true"> <label for="Jenis Sepatu">Leather Sintetis</label>
+                    
+                    <input type="radio" name="Jenis Sepatu" value="Suede" required aria-required="true"> <label for="Jenis Sepatu">Suede</label>
+                    
+                    <input type="radio" name="Jenis Sepatu" value="Knit" required aria-required="true"> <label for="Jenis Sepatu">Knit</label>
+                    
+                    <input type="radio" name="Jenis Sepatu" value="Mesh" required aria-required="true"> <label for="Jenis Sepatu">Mesh</label>
+                    
+                    <input type="radio" name="Jenis Sepatu" value="lainnya" required aria-required="true"> <label for="Jenis Sepatu">lainnya <input type="text"></label>
+            </div>
+
+                <p>Detail merek dan ukuran sepatu</p>
+                <input type="text" name="Merek dan Ukuran" value="" required aria-required="true"> <label for="Merek dan Ukuran"></label>
+
+                <p>Foto sepatu</p>
+                <input type="file" id="fotoInput" name="foto" accept="image/*">
+            </form>
+        </div>
+        <div class="box service">
+            <h3>Choose your service</h3>
+            <p>Services</p>
+                <input type="checkbox" name="service" value="Soft Clean" required aria-required="true"> <label for="service">Soft Clean</label>
+
+                <input type="checkbox" name="service" value="Deep Clean" required aria-required="true"> <label for="service">Deep Clean</label>
+
+                <input type="checkbox" name="service" value="Slippers" required aria-required="true"> <label for="service">Slippers</label>
+
+                <input type="checkbox" name="service" value="Hand Bag" required aria-required="true"> <label for="service">Hand Bag</label>
+
+                <p>Add On</p>
+                <input type="checkbox" name="Add on" value="Suede Treatment" required aria-required="true"> <label for="Add on">Suede Treatment</label>
+
+                <input type="checkbox" name="Add on" value="Full White Treatment" required aria-required="true"> <label for="Add on">Full White Treatment</label>
+
+                <input type="checkbox" name="Add on" value="Unyellowing Treatment" required aria-required="true"> <label for="Add on">Unyellowing Treatment</label>
+
+        </div>
+        <div class="box invoice">
+            <h3>Details</h3>
+            <div class="preview">
+                <img id="previewImage" alt="Preview Foto">
+            </div>
+            <div class="detail">
+                <p>personal</p>
+                <p>service</p>
+                <p>shoes</p>
+                <p>add on</p>
+                <p>Total</p>
+                <input type="button" name="order" value="ORDER">
+            </div>
+        </div>
+
+    </div>
+
+    <script src=""></script>
 </body>
 </html>
